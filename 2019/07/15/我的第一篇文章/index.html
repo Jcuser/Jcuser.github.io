@@ -305,11 +305,56 @@
 </blockquote>
 <ol>
 <li>一行代码<br><code>var admin=document.getElementById(&quot;user&quot;).</code></li>
-<li>大量代码<pre class=" language-java"><code class="language-java"></code></pre>
-</li>
+<li>大量代码</li>
 </ol>
-<p>var user;<br>var pwd;<br>function login(){        //登录验证<br>    var admin=document.getElementById(“user”).value;<br>    var password=document.getElementById(“pass”).value;<br>    if(admin == “”)<br>    {<br>        alert(“账号不能为空”);<br>    }<br>    else if(password == “”)<br>    {<br>        alert(“密码不能为空”);<br>    }<br>    else if(admin==user &amp;&amp; password==pwd)<br>    {<br>        alert(“登录成功！”);<br>    }<br>    else{<br>        alert(“密码或账号有误，请重新输入！”);<br>    }<br>}</p>
-<p>function regist(){         //设定账号密码<br>while(true){<br>    this.user = prompt(“请设定账号”);<br>    if(user == “”)<br>        {<br>            alert(“账号不能为空”);<br>        }<br>    else break;<br>    }<br>    console.log(user);<br>    while(true){<br>    this.pwd = prompt(“请设定密码”);<br>    if(pwd == “”)<br>        {<br>            alert(“密码不能为空”);<br>        }<br>        else break;<br>    }<br>    if(pwd != null &amp;&amp; user != null)<br>        {<br>            alert(“注册成功！”);<br>        }<br>    else {<br>        alert(“注册失败！”);<br>    }<br>}<br> ```</p>
+<pre class=" language-java"><code class="language-java">var user<span class="token punctuation">;</span>
+var pwd<span class="token punctuation">;</span>
+function <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>        <span class="token comment" spellcheck="true">//登录验证</span>
+    var admin<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"user"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    var password<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"pass"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>admin <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"账号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>password <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>admin<span class="token operator">==</span>user <span class="token operator">&amp;&amp;</span> password<span class="token operator">==</span>pwd<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"登录成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码或账号有误，请重新输入！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+function <span class="token function">regist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>         <span class="token comment" spellcheck="true">//设定账号密码</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"请设定账号"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>user <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"账号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>pwd <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"请设定密码"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>pwd <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>pwd <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> user <span class="token operator">!=</span> null<span class="token punctuation">)</span> 
+        <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"注册成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"注册失败！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
 
             </div>
             <hr/>
