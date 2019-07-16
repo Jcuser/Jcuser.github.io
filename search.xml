@@ -13,14 +13,16 @@
       
       <categories>
           
-          <category> 前端学习		&lt;!--分类--&gt; </category>
+          <category> 前端学习 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> &lt;!--标签--&gt; - JavaScript - 前端 </tag>
+            <tag> JavaScript </tag>
+            
+            <tag> 前端 </tag>
             
         </tags>
       
