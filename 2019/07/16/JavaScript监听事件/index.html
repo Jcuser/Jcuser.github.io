@@ -4,17 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="我的第一篇博客, 蜗小萌 博客">
-    <meta name="description" content="第一章这里是内容
-
-无序列表
-无序列表
-无序列表
-无序列表
-无序列表
-
-第二章
-引用内容、说明内容。在语句前面加一个 &amp;gt; ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用">
+    <meta name="keywords" content="JavaScript监听事件, 蜗小萌 博客">
+    <meta name="description" content="事件的概念：JavaScript使我们有能力创建动态页面，网页中的每一个元素都可以产生某些触发JavaScript函数的事件。我们可以认为事件是可以被JavaScript侦测到的一种行为。
+事件流：事件流主要分为冒泡型事件和捕获型事件。IE">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>我的第一篇博客 | 蜗小萌</title>
+    <title>JavaScript监听事件 | 蜗小萌</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -206,13 +198,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://img4.imgtn.bdimg.com/it/u=508387608,2848974022&fm=26&gp=0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4150856151,2059567764&fm=26&gp=0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        我的第一篇博客
+                        JavaScript监听事件
                     </div>
                 </div>
             </div>
@@ -234,12 +226,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/JavaScript/" target="_blank">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
-                            <a href="/tags/Markdown/" target="_blank">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/前端/" target="_blank">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -250,8 +242,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                Markdown
+                            <a href="/categories/前端学习/" class="post-category" target="_blank">
+                                前端学习
                             </a>
                         
                     </div>
@@ -262,21 +254,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-15
+                    2019-07-16
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        252
+                        505
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -292,69 +284,48 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>这里是内容</p>
-<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><blockquote>
-<p>引用内容、说明内容。在语句前面加一个 &gt; ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用等等。</p>
-</blockquote>
-<ol>
-<li>一行代码<br><code>var admin=document.getElementById(&quot;user&quot;).</code></li>
-<li>大量代码</li>
+                <h3 id="事件的概念："><a href="#事件的概念：" class="headerlink" title="事件的概念："></a>事件的概念：</h3><p>JavaScript使我们有能力创建动态页面，网页中的每一个元素都可以产生某些触发JavaScript函数的事件。我们可以认为事件是可以被JavaScript侦测到的一种行为。</p>
+<h3 id="事件流："><a href="#事件流：" class="headerlink" title="事件流："></a>事件流：</h3><p>事件流主要分为冒泡型事件和捕获型事件。IE浏览器目前只支持冒泡型事件，而支持标准DOM的浏览器比如火狐、Chrome等两者都支持。</p>
+<h3 id="使用返回值改变HTML元素的默认行为："><a href="#使用返回值改变HTML元素的默认行为：" class="headerlink" title="使用返回值改变HTML元素的默认行为："></a>使用返回值改变HTML元素的默认行为：</h3><p>HTML元素大都包含了自己的默认行为，例如：超链接、提交按钮等。我们可以通过在绑定事件中加上”return false”来阻止它的默认行为。</p>
+<h3 id="通用性的事件监听方法："><a href="#通用性的事件监听方法：" class="headerlink" title="通用性的事件监听方法："></a>通用性的事件监听方法：</h3><ol>
+<li>绑定HTML元素属性：</li>
 </ol>
-<pre class=" language-java"><code class="language-java">var user<span class="token punctuation">;</span>
-var pwd<span class="token punctuation">;</span>
-function <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>        <span class="token comment" spellcheck="true">//登录验证</span>
-    var admin<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"user"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
-    var password<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"pass"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>admin <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"账号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>password <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>admin<span class="token operator">==</span>user <span class="token operator">&amp;&amp;</span> password<span class="token operator">==</span>pwd<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"登录成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">else</span><span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码或账号有误，请重新输入！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<p>　　　<code>&lt;input type=&quot;button&quot; value=&quot;clickMe&quot; onclick=&quot;check(this)&quot;&gt;</code></p>
+<ol start="2">
+<li>绑定DOM对象属性：</li>
+</ol>
+<p>　　　<code>document.getElementById(&quot;xxx&quot;).onclick=test;</code></p>
+<pre class=" language-php"><code class="language-php"><span class="token markup"><span class="token doctype">&lt;!DOCTYPE html></span></span>
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span></span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span></span>JavaScript两种通用性的绑定事件的方式<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span></span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+            <span class="token keyword">function</span> <span class="token function">test1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"绑定HTML元素属性"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
 
-function <span class="token function">regist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>         <span class="token comment" spellcheck="true">//设定账号密码</span>
-<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"请设定账号"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>user <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"账号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>pwd <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"请设定密码"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>pwd <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>pwd <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> user <span class="token operator">!=</span> null<span class="token punctuation">)</span> 
-        <span class="token punctuation">{</span>
-            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"注册成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token keyword">else</span> <span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"注册失败！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+            <span class="token keyword">function</span> <span class="token function">test2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"绑定DOM对象属性"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span></span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.baidu.com<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>return false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>百度<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></span>
+        <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>超链接有自己的默认行为，即当点击的时候会跳转页面。若是要把默认行为给去掉，可以绑定一个onclick事件，
+        onclick<span class="token operator">=</span><span class="token string">"return false"</span>。这样点击就不会跳转页面了。<span class="token operator">--</span><span class="token operator">></span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test1<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>测试1<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test1()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>test2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b</span><span class="token punctuation">></span></span></span>测试<span class="token number">2</span><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b</span><span class="token punctuation">></span></span></span><span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span></span>
+
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span>
+            document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"test2"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>onclick<span class="token operator">=</span>test2<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//此处不能加括号，加了括号表示调用函数。</span>
+            <span class="token comment" spellcheck="true">/*注意：函数需要通过后面的触发才会调用执行，而上面这句没有放在函数里面，JavaScript从上往下解析的时候，解析到上面的那句代码，
+　　　　　　　　若还没有解析到&lt;body>中的id--test2,就会报错。故JavaScript代码要放在后面。*/</span>
+        <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></span>
+    <span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span></span>
+<span class="token markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></span>
+</code></pre>
+<hr>
 
             </div>
             <hr/>
@@ -392,9 +363,10 @@ function <span class="token function">regist</span><span class="token punctuatio
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/07/16/JavaScript监听事件/">
                     <div class="card-image">
@@ -412,9 +384,9 @@ function <span class="token function">regist</span><span class="token punctuatio
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -427,6 +399,7 @@ function <span class="token function">regist</span><span class="token punctuatio
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -449,19 +422,18 @@ function <span class="token function">regist</span><span class="token punctuatio
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/15/hello-world/">
+                <a href="/2019/07/15/我的第一篇文章/">
                     <div class="card-image">
                         
+                        <img src="http://img4.imgtn.bdimg.com/it/u=508387608,2848974022&amp;fm=26&amp;gp=0.jpg" class="responsive-img" alt="我的第一篇博客">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">我的第一篇博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
                         
                     </div>
                     <div class="publish-info">
@@ -470,11 +442,27 @@ function <span class="token function">regist</span><span class="token punctuatio
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            Jcuser
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category" target="_blank">
+                                    Markdown
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Typora/" target="_blank">
+                        <span class="chip bg-color">Typora</span>
+                    </a>
+                    
+                    <a href="/tags/Markdown/" target="_blank">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
                 </div>
                 
             </div>
