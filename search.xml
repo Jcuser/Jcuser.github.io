@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>JAVA程序设计-JDK安装及环境配置</title>
+      <link href="/2019/08/29/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-JDK%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+      <url>/2019/08/29/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-JDK%E5%AE%89%E8%A3%85%E5%8F%8A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h3 id="JDK的安装"><a href="#JDK的安装" class="headerlink" title="JDK的安装"></a>JDK的安装</h3><h5 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h5><p>打开<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">JDK下载</a></p><blockquote><p>找到要下载的版本和对应的操作系统，点击下载</p></blockquote><p><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%851.png" alt="下载演示"></p><h5 id="安装（傻瓜式）"><a href="#安装（傻瓜式）" class="headerlink" title="安装（傻瓜式）"></a>安装（傻瓜式）</h5><blockquote><p>安装目录可自定义</p></blockquote><p><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%852.png" alt="安装演示"></p><h5 id="Win系统下JAVA环境变量的配置"><a href="#Win系统下JAVA环境变量的配置" class="headerlink" title="Win系统下JAVA环境变量的配置"></a>Win系统下JAVA环境变量的配置</h5><blockquote><p>安装好JDK后我们还需要配置环境变量</p><ul><li>单击Win按键，也就是打开左下角菜单，输入高级设置，会出现查看系统高级设置，点击进去。也可以打开计算机，右键选择属性，然后系统高级设置</li><li>点击环境变量，在<strong>系统变量</strong>下新建变量JAVA_HOME，变量值为JDK安装路径。再新建CLASSPATH变量，变量值为<strong>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tool.jar</strong>注意前面有一点</li></ul></blockquote><p><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%853.png" alt="新建系统环境变量"><br><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%854.png" alt="新建系统环境变量"></p><blockquote><p>在path中添加环境变量</p><ul><li>将%JAVA_HOME%\bin和%CLASSPATH%变量添加到path中</li></ul></blockquote><p><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%855.png" alt="在path中添加环境变量"></p><h5 id="检验是否安装成功"><a href="#检验是否安装成功" class="headerlink" title="检验是否安装成功"></a>检验是否安装成功</h5><blockquote><p>打开cmd，输入java，显示详细信息，输入javac，显示详细信息则表示配置成功</p></blockquote><p><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%856-1.png" alt="检验安装"><br><img src="../../../../imgs/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/JDK%E5%AE%89%E8%A3%85/JDK%E5%AE%89%E8%A3%856-2.png" alt="检验安装"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面向对象 </tag>
+            
+            <tag> JAVA学习 </tag>
+            
+            <tag> JDK安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法与数据结构-第一章</title>
+      <link href="/2019/08/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AC%AC%E4%B8%80%E7%AB%A0/"/>
+      <url>/2019/08/27/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%AC%AC%E4%B8%80%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="什么是数据结构"><a href="#什么是数据结构" class="headerlink" title="什么是数据结构"></a>什么是数据结构</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法与数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c语言 </tag>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript监听事件</title>
       <link href="/2019/07/16/JavaScript%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6/"/>
       <url>/2019/07/16/JavaScript%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6/</url>
@@ -25,46 +83,6 @@
             <tag> 前端 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的第一篇博客</title>
-      <link href="/2019/07/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2019/07/15/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>这里是内容</p><ul><li>无序列表</li><li>无序列表</li><li>无序列表</li><li>无序列表</li><li>无序列表</li></ul><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><blockquote><p>引用内容、说明内容。在语句前面加一个 &gt; ，注意是英文的那个右尖括号，注意空格，引用因为是一个区块，理论上是应该什么内容都可以放，比如说：标题，列表，引用等等。</p></blockquote><ol><li>一行代码<br><code>var admin=document.getElementById(&quot;user&quot;).</code></li><li>大量代码</li></ol><pre class=" language-java"><code class="language-java">var user<span class="token punctuation">;</span>var pwd<span class="token punctuation">;</span>function <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>        <span class="token comment" spellcheck="true">//登录验证</span>    var admin<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"user"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>    var password<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"pass"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>admin <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"账号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>password <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>admin<span class="token operator">==</span>user <span class="token operator">&amp;&amp;</span> password<span class="token operator">==</span>pwd<span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"登录成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">else</span><span class="token punctuation">{</span>        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码或账号有误，请重新输入！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span>function <span class="token function">regist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>         <span class="token comment" spellcheck="true">//设定账号密码</span><span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"请设定账号"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>user <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"账号不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">this</span><span class="token punctuation">.</span>pwd <span class="token operator">=</span> <span class="token function">prompt</span><span class="token punctuation">(</span><span class="token string">"请设定密码"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>pwd <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"密码不能为空"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>        <span class="token keyword">else</span> <span class="token keyword">break</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>pwd <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> user <span class="token operator">!=</span> null<span class="token punctuation">)</span>         <span class="token punctuation">{</span>            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"注册成功！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token keyword">else</span> <span class="token punctuation">{</span>        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"注册失败！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Markdown </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Typora </tag>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2019/07/15/hello-world/"/>
-      <url>/2019/07/15/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
