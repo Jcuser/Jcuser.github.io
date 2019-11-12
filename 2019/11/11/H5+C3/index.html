@@ -1,0 +1,1043 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML5+CSS3笔记, 小蜗,博客">
+    <meta name="description" content="emmet语法？
+H5IE 9 +
+H5新增的语义化标签除了ie，这些标签默认是块元素
+
+header ：定义页面头部
+nav：导航栏标签
+article：内容标签
+sectiom：文档标签
+aside：侧边栏标签
+footer：尾部标签
+">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>HTML5+CSS3笔记 | 小蜗</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/favicon.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">小蜗</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/favicon.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">小蜗</div>
+        <div class="logo-desc">
+            
+            蜗牛没有停歇的时间，他们只能一步一步向上爬，才能到达自己想去的地方。
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../imgs/html5.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        HTML5+CSS3笔记
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/html5/" target="_blank">
+                                <span class="chip bg-color">html5</span>
+                            </a>
+                        
+                            <a href="/tags/css3/" target="_blank">
+                                <span class="chip bg-color">css3</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/HTML/" class="post-category" target="_blank">
+                                HTML
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-11-11
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        2.6k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        10 分
+                    </div>
+                    
+                
+				
+				
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>emmet语法？</p>
+<h1 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h1><p>IE 9 +</p>
+<h2 id="H5新增的语义化标签"><a href="#H5新增的语义化标签" class="headerlink" title="H5新增的语义化标签"></a>H5新增的语义化标签</h2><p>除了ie，这些标签默认是块元素</p>
+<ul>
+<li>header ：定义页面头部</li>
+<li>nav：导航栏标签</li>
+<li>article：内容标签</li>
+<li>sectiom：文档标签</li>
+<li>aside：侧边栏标签</li>
+<li>footer：尾部标签</li>
+</ul>
+<h2 id="H5新增的多媒体标签"><a href="#H5新增的多媒体标签" class="headerlink" title="H5新增的多媒体标签"></a>H5新增的多媒体标签</h2><p>使用这些标签前前查文档（谷歌默认不自动播放，但有解决方案）</p>
+<ul>
+<li>video:视频标签</li>
+<li>audio：音频标签</li>
+</ul>
+<h2 id="H5新增的input类型"><a href="#H5新增的input类型" class="headerlink" title="H5新增的input类型"></a>H5新增的input类型</h2><table>
+<thead>
+<tr>
+<th>type属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>emali</td>
+<td>限制用户必须输入Email类型</td>
+</tr>
+<tr>
+<td>url</td>
+<td>限制用户必须输入URL类型</td>
+</tr>
+<tr>
+<td>date</td>
+<td>限制用户必须输入日期类型</td>
+</tr>
+<tr>
+<td>time</td>
+<td>限制用户必须输入时间类型</td>
+</tr>
+<tr>
+<td>month</td>
+<td>限制用户必须输入月类型</td>
+</tr>
+<tr>
+<td>week</td>
+<td>限制用户必须输入周类型</td>
+</tr>
+<tr>
+<td>number</td>
+<td>限制用户必须输入数字类型</td>
+</tr>
+<tr>
+<td>search</td>
+<td>搜索框</td>
+</tr>
+<tr>
+<td>color</td>
+<td>颜色选择表单</td>
+</tr>
+</tbody></table>
+<h2 id="H5新增的input属性"><a href="#H5新增的input属性" class="headerlink" title="H5新增的input属性"></a>H5新增的input属性</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>required</td>
+<td>required</td>
+<td>表示必填</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>提示文本</td>
+<td>提示文本</td>
+</tr>
+<tr>
+<td>autofocus</td>
+<td>autofocus</td>
+<td>页面加载完自动聚焦</td>
+</tr>
+<tr>
+<td>autocomplete</td>
+<td>off/on</td>
+<td>是否保存记录，只有拥有name属性并且提交成功的数据才会被保存，默认已经打开</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>multiple</td>
+<td>可选择多文件提交</td>
+</tr>
+</tbody></table>
+<h1 id="C3"><a href="#C3" class="headerlink" title="C3"></a>C3</h1><h2 id="新增选择器"><a href="#新增选择器" class="headerlink" title="新增选择器"></a>新增选择器</h2><p><strong>属性选择器</strong></p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">选择器<span class="token attribute">[属性名]</span></span><span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">/*例子：*/</span>
+<span class="token selector">input<span class="token attribute">[value]</span></span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/*表示所有拥有value属性的input*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">input<span class="token attribute">[name="123"]</span></span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/*表示所有name属性值是123的input*/</span>
+<span class="token punctuation">}</span></code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">选择器</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">[<em>attribute</em>]</td>
+<td align="left">用于选取带有指定属性的元素。</td>
+</tr>
+<tr>
+<td align="left">[<em>attribute</em>=<em>value</em>]</td>
+<td align="left">用于选取带有指定属性和值的元素。</td>
+</tr>
+<tr>
+<td align="left">[<em>attribute</em>~=<em>value</em>]</td>
+<td align="left">用于选取属性值中包含指定词汇的元素。</td>
+</tr>
+<tr>
+<td align="left">[<em>attribute</em>|=<em>value</em>]</td>
+<td align="left">用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。</td>
+</tr>
+<tr>
+<td align="left">[[<em>attribute</em>^=<em>value</em>]</td>
+<td align="left">匹配属性值以指定值开头的每个元素。</td>
+</tr>
+<tr>
+<td align="left">[<em>attribute</em>$=<em>value</em>]</td>
+<td align="left">匹配属性值以指定值结尾的每个元素。</td>
+</tr>
+<tr>
+<td align="left">[<em>attribute*</em>=<em>value</em>]</td>
+<td align="left">匹配属性值中包含指定值的每个元素。</td>
+</tr>
+</tbody></table>
+<p><strong>结构伪类选择器</strong></p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>功能描述</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>E:last-child</td>
+<td>选择父元素的倒数第一个子元素E，相当于E:nth-last-child(1)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:nth-child(n)</td>
+<td>选择父元素的第n个子元素，n从1开始计算</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:nth-last-child(n)</td>
+<td>选择父元素的倒数第n个子元素，n从1开始计算</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:first-of-type</td>
+<td>选择父元素下同种标签的第一个元素，相当于E:nth-of-type(1)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:last-of-type</td>
+<td>选择父元素下同种标签的倒数第一个元素，相当于E:nth-last-of-type(1)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:nth-of-type(n)</td>
+<td>与:nth-child(n)作用类似，用作选择使用同种标签的第n个元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:nth-last-of-type</td>
+<td>与:nth-last-child作用类似，用作选择同种标签的倒数第一个元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:only-child</td>
+<td>选择父元素下仅有的一个子元素，相当于E:first-child:last-child或E:nth-child(1):nth-last-child(1)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:root</td>
+<td>选择文档的根元素，对于HTML文档，根元素永远HTML</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:empty</td>
+<td>选择空节点，即没有子元素的元素，而且该元素也不包含任何文本节点</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E:only-of-type</td>
+<td>选择父元素下使用同种标签的唯一子元素，相当于E:first-of-type:last-of-type或E:nth-of-type(1):nth-last-of-type(1)</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<p><strong>伪元素选择器</strong></p>
+<p> <strong>::first-letter</strong> 第一个字</p>
+<p> <strong>::first-line</strong> 第一行（以浏览器为准的第一行）</p>
+<p><strong>::selection</strong> 被选中的字行（鼠标选中的字段）只能向 ::selection 选择器应用少量 CSS 属性：color、background、cursor 以及 outline。</p>
+<p> <strong>::before</strong> 和 <strong>::after</strong></p>
+<ol>
+<li>必须带一个属性content</li>
+</ol>
+<p>2.在内部内容的前面或者后面插入内容</p>
+<pre><code>&lt;div&gt;必须带一个属性content&lt;/div&gt;
+ div::before {
+            content: &quot;我是插入的内容&quot;;
+            background: #572eb8;
+        }</code></pre><p><a href="https://images2018.cnblogs.com/blog/1319779/201804/1319779-20180416171606336-1638849467.jpg" target="_blank" rel="noopener"><img src="https://images2018.cnblogs.com/blog/1319779/201804/1319779-20180416171606336-1638849467.jpg" alt="img"></a></p>
+<p>3.当插入的内容定义宽高和其他属性时，其实就是一个盒子（必须通过display转换，因为默认是一个行内元素）。</p>
+<pre><code>&lt;body&gt;
+    &lt;div&gt;盒子1&lt;/div&gt;
+&lt;/body&gt;</code></pre><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<pre><code>        div{
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        div::before{
+            content: &quot;插入的盒子&quot;;
+            display: block;
+            width: 200px;
+            height: 200px;
+            background: rgb(211, 29, 29);
+        }</code></pre><p><a href="javascript:void(0);" target="_blank" rel="noopener"><img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></p>
+<p><a href="https://images2018.cnblogs.com/blog/1319779/201804/1319779-20180416172248138-307392093.jpg" target="_blank" rel="noopener"><img src="https://images2018.cnblogs.com/blog/1319779/201804/1319779-20180416172248138-307392093.jpg" alt="img"></a></p>
+<p>4.上述可以解释清除浮动的后面两种方法，单伪元素法和双伪元素法（<a href="http://www.cnblogs.com/EricZLin/p/8745944.html" target="_blank" rel="noopener">清除浮动的四种方法：额外标签法，overflow：hidden，单伪元素法和双伪元素法</a>）</p>
+<h2 id="C3盒子模型"><a href="#C3盒子模型" class="headerlink" title="C3盒子模型"></a>C3盒子模型</h2><p><strong>box-sizing</strong></p>
+<p>该属性有两个值content-box/border-box</p>
+<ul>
+<li>content-box：默认的，盒子的大小计算公式：width + padding + border</li>
+<li>border-box：盒子大小不会随着margin和border的大小而扩大（前提是padding + border &lt;= width）</li>
+</ul>
+<h2 id="css3其他新特性"><a href="#css3其他新特性" class="headerlink" title="css3其他新特性"></a>css3其他新特性</h2><p><strong>图片模糊</strong></p>
+<p>filter：函数（）；</p>
+<p><strong>calc函数</strong></p>
+<p>该函数可以帮你执行一些计算</p>
+<p>例子</p>
+<pre class=" language-css"><code class="language-css"><span class="token property">width</span><span class="token punctuation">:</span><span class="token function">calc</span><span class="token punctuation">(</span><span class="token number">100%</span>-<span class="token number">100</span>px<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="C3-过渡"><a href="#C3-过渡" class="headerlink" title="C3 过渡"></a>C3 过渡</h2><pre class=" language-css"><code class="language-css"><span class="token property">transition</span><span class="token punctuation">:</span>要过渡的属性 过渡时间 运动曲线 何时开始[,要过渡的属性 过渡时间 运动曲线 何时开始[,<span class="token number">...</span>]]<span class="token punctuation">;</span></code></pre>
+<ul>
+<li><strong>要过渡的属性</strong> : 想要变化的css属性（可以省略，默认是all）</li>
+<li><strong>过渡时间</strong>： 单位是s，例如0.5s</li>
+<li><strong>运动曲线</strong>：默认是 ease （可以省略）<ul>
+<li>ease ：逐渐变慢</li>
+<li>linear：匀速</li>
+<li>ease-in：加速</li>
+<li>ease-out：减速</li>
+<li>ease-in-out：慢》块》慢</li>
+</ul>
+</li>
+<li><strong>何时开始</strong>：单位是秒，默认是0s（可以省略）</li>
+</ul>
+<h2 id="2D转换"><a href="#2D转换" class="headerlink" title="2D转换"></a>2D转换</h2><p>transform（可以实现元素的位移、旋转、缩放等）</p>
+<h3 id="移动：translate"><a href="#移动：translate" class="headerlink" title="移动：translate"></a><strong>移动</strong>：translate</h3><p>对行元素无效</p>
+<ul>
+<li>translate(x,y):xy两个方向都可以移动</li>
+<li>translateX(n)：只移动x方向</li>
+<li>translateY(n)：只移动y方向</li>
+</ul>
+<p>语法：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span><span class="token function">translate</span><span class="token punctuation">(</span><span class="token number">20</span>px,<span class="token number">100</span>px<span class="token punctuation">)</span><span class="token comment" spellcheck="true">/*水平移动20px 垂直移动100px，如果值是百分比，那么是相对于盒子的对应方向方向上的长度*/</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="旋转：rotale"><a href="#旋转：rotale" class="headerlink" title="旋转：rotale"></a><strong>旋转</strong>：rotale</h3><p>度数单位是deg，如果度数是正数则顺时针旋转，度数是负数则逆时针旋转，旋转点默认是元素的中心</p>
+<p>语法：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+   <span class="token property">transform</span><span class="token punctuation">:</span><span class="token function">rotate</span><span class="token punctuation">(</span>度数<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p><strong>设置旋转中心</strong>：transform-origin</p>
+<p>x y默认都是50%，这里的%是相对于元素高宽，还可以使用方位名词（top bottom left right center）</p>
+<p>例如 top left 表示左上角</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+    <span class="token property">transform-origin</span><span class="token punctuation">:</span> x y<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">/*transform-origin: top left;*/</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="缩放：scale"><a href="#缩放：scale" class="headerlink" title="缩放：scale"></a><strong>缩放</strong>：scale</h3><p>可以按元素本身的大小按倍数放大，放大1倍为不变，可以是小数</p>
+<p>语法：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+    <span class="token property">trabsform</span><span class="token punctuation">:</span><span class="token function">scale</span><span class="token punctuation">(</span>x,y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>trabsform:scale(1,1):放大了一倍，等于没变</li>
+<li>trabsform:scale(2,2)：高宽都放大两边</li>
+<li>trabsform:scale(2)：相对于trabsform:scale(2,2)</li>
+<li>trabsform:scale(0.5,0.5)：缩小</li>
+</ul>
+<h3 id="2D转换综合语法"><a href="#2D转换综合语法" class="headerlink" title="2D转换综合语法"></a>2D转换综合语法</h3><p>直接在后面跟空格就可以添加了，对顺序没有硬性要求，但切记移动移动要在旋转之前，不然会出现你意想不到的效果（移动是按相对于元素的方向移动的，当你先旋转元素之后，元素的方向会与屏幕的方向不一样）</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+   <span class="token property">trabsform</span><span class="token punctuation">:</span><span class="token function">translate</span><span class="token punctuation">(</span>x,y<span class="token punctuation">)</span> <span class="token function">rotate</span><span class="token punctuation">(</span>度数<span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span>x,y<span class="token punctuation">)</span> 
+<span class="token punctuation">}</span></code></pre>
+<h2 id="C3-动画"><a href="#C3-动画" class="headerlink" title="C3 动画"></a>C3 动画</h2><p>相对于过渡，动画可以实现更多变化，控制，连续播放等效果</p>
+<p>制作动画分两步：</p>
+<ul>
+<li>定义动画</li>
+<li>使用（调用）动画</li>
+</ul>
+<h3 id="定义动画"><a href="#定义动画" class="headerlink" title="定义动画"></a>定义动画</h3><p>语法：(中间可以定义如何时间点的样式)</p>
+<pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@keyframes</span> 动画名</span><span class="token punctuation">{</span>
+    <span class="token selector">0%</span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">100</span>px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">41%</span><span class="token punctuation">{</span>
+        <span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">45</span>deg<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token selector">100%</span><span class="token punctuation">{</span>
+        <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">200</span>px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="使用动画"><a href="#使用动画" class="headerlink" title="使用动画"></a>使用动画</h3><p>语法：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+    <span class="token property">animation</span><span class="token punctuation">:</span>动画名<span class="token punctuation">;</span>
+    <span class="token property">animation-duration</span><span class="token punctuation">:</span>持续时间<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="动画常见属性"><a href="#动画常见属性" class="headerlink" title="动画常见属性"></a>动画常见属性</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@keyframes</td>
+<td>定义动画</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>所有动画的简写，除啦animation-play-state属性</td>
+</tr>
+<tr>
+<td>animation-name</td>
+<td>调用的动画的名称（必须的）</td>
+</tr>
+<tr>
+<td>animation-duration</td>
+<td>动画的持续时间</td>
+</tr>
+<tr>
+<td>animation-timing-function</td>
+<td>动画的速度曲线，默认是“ease”，这里相对于过渡增加了步长steps(n),表示动画分为n步执行</td>
+</tr>
+<tr>
+<td>animation-delay</td>
+<td>动画开始时间，默认是0</td>
+</tr>
+<tr>
+<td>animation-iteration-count</td>
+<td>动画执行次数，默认是1，还有infinite</td>
+</tr>
+<tr>
+<td>animation-direction</td>
+<td>动画下一周期是否逆向播放，默认是“normal”，还有”alternate“（逆播放）</td>
+</tr>
+<tr>
+<td>animation-play-state</td>
+<td>动画是否运行，默认是“running”，还有“paused”</td>
+</tr>
+<tr>
+<td>animation-fill-mode</td>
+<td>动画结束状态，保持结束状态：forwards，回到起始状态：backwards</td>
+</tr>
+</tbody></table>
+<h3 id="动画属性简写"><a href="#动画属性简写" class="headerlink" title="动画属性简写"></a>动画属性简写</h3><p>语法：</p>
+<p>前两个属性是必须的</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+    <span class="token property">animation</span><span class="token punctuation">:</span>动画名称 持续时间 运动曲线 开始时间 播放次数 是否下一周期反向 动画结束的状态<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="阴影-：box-shadow"><a href="#阴影-：box-shadow" class="headerlink" title="阴影 ：box-shadow"></a>阴影 ：box-shadow</h3><p>语法：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">div</span><span class="token punctuation">{</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span>x偏移 y偏移 模糊距离 阴影大小 颜色 模糊位置<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ul>
+<li>x偏移：（必需）</li>
+<li>y偏移：（必需）</li>
+<li>模糊距离：（可选）</li>
+<li>阴影大小（可选）</li>
+<li>颜色：（可选）</li>
+<li>模糊位置：默认（inset）外部阴影，outset改为内阴影（可选）</li>
+</ul>
+<h2 id="3D转换"><a href="#3D转换" class="headerlink" title="3D转换"></a>3D转换</h2><h3 id="移动：translate3d"><a href="#移动：translate3d" class="headerlink" title="移动：translate3d"></a>移动：translate3d</h3><ul>
+<li>transform:translateX(100px):仅仅在x轴上移动；</li>
+<li>transform:translateY(100px):仅仅在y轴上移动；</li>
+<li>transform:translateZ(100px):仅仅在z轴上移动；</li>
+<li>transform:translate3d(x,y,z):x,y,z三个方向移动；</li>
+</ul>
+<h3 id="透视：perspective"><a href="#透视：perspective" class="headerlink" title="透视：perspective"></a>透视：perspective</h3><p>代码给上级，会让下级有透视效果</p>
+<ul>
+<li>perspective:500:表示虚拟距离，既当元素向前移动500px时会占满屏幕</li>
+</ul>
+<h3 id="旋转：rotate3d"><a href="#旋转：rotate3d" class="headerlink" title="旋转：rotate3d"></a>旋转：rotate3d</h3><ul>
+<li>transform:rotateX(100deg):仅仅沿着x轴旋转；</li>
+<li>transform:rotateY(100deg):仅仅沿着y轴旋转；</li>
+<li>transform:rotateZ(100deg):仅仅沿着z轴旋转；</li>
+<li>transform:rotate3d(x,y,z,deg):沿着x,y,z轴旋转,单位为deg(沿着x,y,z的矢量轴旋转)；</li>
+</ul>
+<h3 id="3D呈现：transform-style"><a href="#3D呈现：transform-style" class="headerlink" title="3D呈现：transform-style"></a>3D呈现：transform-style</h3><p>当一个元素没有开启3D呈现时，如果对这个元素的父元素进行3D旋转时，该元素会转变为2D。</p>
+<p>代码给父（或父以上）级，但影响的是子元素，就像 perspective一样。</p>
+<ul>
+<li>transform-style:flat;子元素不开启3D呈现，默认的</li>
+<li>transform-style:preserve-3d;子元素开启3D立体空间</li>
+</ul>
+<h3 id="浏览器私有前缀"><a href="#浏览器私有前缀" class="headerlink" title="浏览器私有前缀"></a>浏览器私有前缀</h3><ul>
+<li>-moz-：firefox</li>
+<li>-ms-：ie</li>
+<li>-webkit-：chrome，Safari</li>
+<li>-o-：Opera</li>
+</ul>
+<h2 id="C3渐变色"><a href="#C3渐变色" class="headerlink" title="C3渐变色"></a>C3渐变色</h2><p>C3中有线性渐变和径向渐变两种渐变</p>
+<h3 id="CSS-background-image-属性"><a href="#CSS-background-image-属性" class="headerlink" title="CSS background-image 属性"></a>CSS background-image 属性</h3><table>
+<thead>
+<tr>
+<th>url(<em>‘URL’</em>)</th>
+<th>图像的URL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>无图像背景会显示。这是默认</td>
+</tr>
+<tr>
+<td>linear-gradient()</td>
+<td>创建一个线性渐变的 “图像”(从上到下)</td>
+</tr>
+<tr>
+<td>radial-gradient()</td>
+<td>用径向渐变创建 “图像”。 (center to edges)</td>
+</tr>
+<tr>
+<td>repeating-linear-gradient()</td>
+<td>创建重复的线性渐变 “图像”。</td>
+</tr>
+<tr>
+<td>repeating-radial-gradient()</td>
+<td>创建重复的径向渐变 “图像”</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>指定背景图像应该从父元素继承</td>
+</tr>
+</tbody></table>
+<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><p>线性渐变是指颜色的渐变方向是沿着一个方法变换的</p>
+<p>语法：</p>
+<pre class=" language-css"><code class="language-css"><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>direction, color-stop<span class="token number">1</span>, color-stop<span class="token number">2</span>, <span class="token number">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<ul>
+<li>direction：渐变方向<ul>
+<li>可以是方位名词： to bottom、to top、to right、to left、to bottom right，等等 </li>
+<li>可以是角度： <img src="https://www.runoob.com/wp-content/uploads/2014/07/7B0CC41A-86DC-4E1B-8A69-A410E6764B91.jpg" alt="img"> </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>color-stop：渐变颜色，至少两个值；</li>
+</ul>
+<h3 id="重复线性渐变"><a href="#重复线性渐变" class="headerlink" title="重复线性渐变"></a>重复线性渐变</h3><h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><p>有一个点向周围方向扩散</p>
+<p>上菜鸟教程吧</p>
+<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h3 id="背景图片大小：background-size"><a href="#背景图片大小：background-size" class="headerlink" title="背景图片大小：background-size"></a>背景图片大小：background-size</h3><ul>
+<li>background-size:50px 100px;(高50宽100)</li>
+<li>background-size:cover;(等比例缩放到高宽都足以填充元素)</li>
+<li>background-size:contain;(等比例缩放到高或宽足以填充元素)</li>
+</ul>
+
+            </div>
+            <hr/>
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/11/11/H5+C3/">
+                    <div class="card-image">
+                        
+                        <img src="../../../../imgs/html5.jpg" class="responsive-img" alt="HTML5+CSS3笔记">
+                        
+                        <span class="card-title">HTML5+CSS3笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            emmet语法？
+H5IE 9 +
+H5新增的语义化标签除了ie，这些标签默认是块元素
+
+header ：定义页面头部
+nav：导航栏标签
+article：内容标签
+sectiom：文档标签
+aside：侧边栏标签
+footer：尾部标签
+
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/HTML/" class="post-category" target="_blank">
+                                    HTML
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/html5/" target="_blank">
+                        <span class="chip bg-color">html5</span>
+                    </a>
+                    
+                    <a href="/tags/css3/" target="_blank">
+                        <span class="chip bg-color">css3</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/29/JAVA程序设计-JDK安装及环境配置/">
+                    <div class="card-image">
+                        
+                        <img src="../../../../imgs/JAVA程序设计/JAVA程序设计.jpg" class="responsive-img" alt="JAVA程序设计-JDK安装及环境配置">
+                        
+                        <span class="card-title">JAVA程序设计-JDK安装及环境配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            JDK的安装下载打开JDK下载
+
+找到要下载的版本和对应的操作系统，点击下载
+
+
+安装（傻瓜式）
+安装目录可自定义
+
+
+Win系统下JAVA环境变量的配置
+安装好JDK后我们还需要配置环境变量
+
+单击Win按键，也就是打开左下角菜单，输入高
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JAVA程序设计/" class="post-category" target="_blank">
+                                    JAVA程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/面向对象/" target="_blank">
+                        <span class="chip bg-color">面向对象</span>
+                    </a>
+                    
+                    <a href="/tags/JAVA学习/" target="_blank">
+                        <span class="chip bg-color">JAVA学习</span>
+                    </a>
+                    
+                    <a href="/tags/JDK安装/" target="_blank">
+                        <span class="chip bg-color">JDK安装</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://Jcuser.github.io/" target="_blank">Jcuser</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">3.4k</span>
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Jcuser" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2550960513@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=http://wpa.qq.com/msgrd?v=3&amp;uin=2550960513&amp;site=qq&amp;menu=yes" class="tooltipped" data-tooltip="QQ联系我: http://wpa.qq.com/msgrd?v=3&amp;uin=2550960513&amp;site=qq&amp;menu=yes" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>
