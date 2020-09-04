@@ -198,7 +198,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('img/桥接模式.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../vmware/桥接模式.png')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -286,50 +286,50 @@
             <div id="articleContent">
                 <h2 id="Vmware虚拟机三种网络连接方式详解"><a href="#Vmware虚拟机三种网络连接方式详解" class="headerlink" title="Vmware虚拟机三种网络连接方式详解"></a>Vmware虚拟机三种网络连接方式详解</h2><p>​        Vmware为我们提供了三种网络工作模式，它们分别是：<strong>Bridged</strong>（桥接模式）、<strong>NAT</strong>（网络地址转换模式）、<strong>Host-Only</strong>（仅主机模式）。</p>
 <h3 id="一、Bridged（桥接模式）"><a href="#一、Bridged（桥接模式）" class="headerlink" title="一、Bridged（桥接模式）"></a>一、<strong>Bridged</strong>（桥接模式）</h3><p>将主机网卡与虚拟机虚拟的网卡利用虚拟网桥进行通信。在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致。其网络结构如下图所示：</p>
-<p><img src="img/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F.png" alt></p>
+<p><img src="../../../../vmware/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F.png" alt></p>
 <p>具体操作如下：</p>
 <p>1、首先，安装完系统之后，在开启系统之前，点击“编辑虚拟机设置”来设置网卡模式。</p>
-<p><img src="img/%E7%BC%96%E8%BE%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%BE%E7%BD%AE.jpg" alt></p>
+<p><img src="../../../../vmware/%E7%BC%96%E8%BE%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%AE%BE%E7%BD%AE.jpg" alt></p>
 <p>2、  打开虚拟网络编辑器</p>
-<p><img src="img/%E7%BC%96%E8%BE%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C.jpg" alt></p>
+<p><img src="../../../../vmware/%E7%BC%96%E8%BE%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C.jpg" alt></p>
 <p>3、 选择VMnet0，选择桥接模式，桥接到本机可用的网络上（打开网络适配器可以查看）</p>
-<p><img src="img/%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E4%B8%AD%E5%BF%83%E5%8F%AF%E7%94%A8%E7%BD%91%E7%BB%9C.jpg" alt></p>
+<p><img src="../../../../vmware/%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E4%B8%AD%E5%BF%83%E5%8F%AF%E7%94%A8%E7%BD%91%E7%BB%9C.jpg" alt></p>
 <p>4、检验是否成功</p>
 <blockquote>
 <p>在虚拟机输入 <code>ip addr</code> 命令</p>
 </blockquote>
-<p><img src="img/%E6%9F%A5%E7%9C%8B%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9Cip.jpg" alt></p>
+<p><img src="../../../../vmware/%E6%9F%A5%E7%9C%8B%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9Cip.jpg" alt></p>
 <p>inet后的就是虚拟机网络ip地址</p>
 <p>本地主机ping虚拟机ip：</p>
-<p><img src="img/%E6%9C%AC%E5%9C%B0%E4%B8%BB%E6%9C%BAping%E8%99%9A%E6%8B%9F%E6%9C%BA.jpg" alt></p>
+<p><img src="../../../../vmware/%E6%9C%AC%E5%9C%B0%E4%B8%BB%E6%9C%BAping%E8%99%9A%E6%8B%9F%E6%9C%BA.jpg" alt></p>
 <p>网络连接成功。</p>
 <h3 id="二、NAT（网络地址转换模式）"><a href="#二、NAT（网络地址转换模式）" class="headerlink" title="二、NAT（网络地址转换模式）"></a>二、<strong>NAT</strong>（网络地址转换模式）</h3><p>如果你的网络ip资源紧缺，但是你又希望你的虚拟机能够联网，这时候NAT模式是最好的选择。NAT模式借助虚拟NAT设备和虚拟DHCP服务器，使得虚拟机可以联网。其网络结构如下图所示：</p>
-<p><img src="img/NAT%E6%A8%A1%E5%BC%8F.png" alt></p>
+<p><img src="../../../../vmware/NAT%E6%A8%A1%E5%BC%8F.png" alt></p>
 <p>具体操作如下：</p>
 <p>1、打开虚拟机网络编辑器，编辑VMnet8设置NAT模式</p>
-<img src="img/虚拟网络编辑器.jpg" style="zoom:80%;">
+<img src="../../../../vmware/虚拟网络编辑器.jpg" style="zoom:80%;">
 
 <p>2、编辑虚拟机网络适配器，选择NAT模式</p>
-<p><img src="img/%E7%BC%96%E8%BE%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E5%99%A8%E9%80%89%E6%8B%A9nat%E6%A8%A1%E5%BC%8F.jpg" alt></p>
+<p><img src="../../../../vmware/%E7%BC%96%E8%BE%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%80%82%E9%85%8D%E5%99%A8%E9%80%89%E6%8B%A9nat%E6%A8%A1%E5%BC%8F.jpg" alt></p>
 <p>3、测试</p>
 <p>开启虚拟机，输入<code>ip addr</code>命令，查看ip</p>
-<p><img src="img/nat%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C.jpg" alt></p>
+<p><img src="../../../../vmware/nat%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C.jpg" alt></p>
 <p>打开Xshell远程连接测试</p>
-<p><img src="img/NAT%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%B5%8B%E8%AF%95.jpg" alt></p>
+<p><img src="../../../../vmware/NAT%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E6%B5%8B%E8%AF%95.jpg" alt></p>
 <p>成功！</p>
 <p>这就是NAT模式，利用虚拟的NAT设备以及虚拟DHCP服务器来使虚拟机连接外网，而VMware Network Adapter VMnet8虚拟网卡是用来与虚拟机通信的。</p>
 <h3 id="三、Host-Only（仅主机模式）"><a href="#三、Host-Only（仅主机模式）" class="headerlink" title="三、Host-Only（仅主机模式）"></a>三、Host-Only（仅主机模式）</h3><p>Host-Only模式其实就是NAT模式去除了虚拟NAT设备，然后使用VMware Network Adapter VMnet1虚拟网卡连接VMnet1虚拟交换机来与虚拟机通信的，Host-Only模式将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。其网络结构如下图所示：</p>
-<p><img src="img/%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F.jpg" alt></p>
+<p><img src="../../../../vmware/%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F.jpg" alt></p>
 <p>1、打开虚拟网络编辑器，这种VMnet1为仅主机模式</p>
-<p><img src="img/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BC%96%E8%BE%91%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F.jpg" alt></p>
+<p><img src="../../../../vmware/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BC%96%E8%BE%91%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F.jpg" alt></p>
 <p>2、设置虚拟机网络适配器为仅主机模式</p>
-<p><img src="img/%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%E9%80%82%E9%85%8D%E5%99%A8.jpg" alt></p>
+<p><img src="../../../../vmware/%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%E9%80%82%E9%85%8D%E5%99%A8.jpg" alt></p>
 <p>3、开启虚拟机测试</p>
 <p>输入命令：<code>ip addr</code></p>
-<p><img src="img/%E6%B5%8B%E8%AF%95%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F.jpg" alt></p>
+<p><img src="../../../../vmware/%E6%B5%8B%E8%AF%95%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F.jpg" alt></p>
 <p>获取到ip但是不能访问外网</p>
 <p>测试Xshell连接：</p>
-<p><img src="img/%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%E6%B5%8B%E8%AF%95%E8%BF%9C%E7%A8%8B.jpg" alt></p>
+<p><img src="../../../../vmware/%E4%BB%85%E4%B8%BB%E6%9C%BA%E6%A8%A1%E5%BC%8F%E6%B5%8B%E8%AF%95%E8%BF%9C%E7%A8%8B.jpg" alt></p>
 <p>连接成功！</p>
 
             </div>
@@ -376,7 +376,7 @@
                 <a href="/2020/09/04/vmware虚拟机三种网络连接/">
                     <div class="card-image">
                         
-                        <img src="img/桥接模式.png" class="responsive-img" alt="Vmware虚拟机三种网络连接方式详解">
+                        <img src="../../../../vmware/桥接模式.png" class="responsive-img" alt="Vmware虚拟机三种网络连接方式详解">
                         
                         <span class="card-title">Vmware虚拟机三种网络连接方式详解</span>
                     </div>
